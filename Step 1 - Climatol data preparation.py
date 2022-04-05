@@ -68,7 +68,7 @@ climatol_dat.to_csv(path + '/Climatol/Rmon_1998-2018.dat', sep='\t',
                 na_rep='NA',index=False,header=False)
 
 #Reading the information file of each station
-station_info = pd.read_csv(path + '/Aditional File 1.csv')
+station_info = pd.read_csv(path + '/Stations Info.csv')
 #Getting the info of the selected stations
 station_info_filt = station_info[station_info['Station Name']
                                  .isin(station_filt['Station'])]
