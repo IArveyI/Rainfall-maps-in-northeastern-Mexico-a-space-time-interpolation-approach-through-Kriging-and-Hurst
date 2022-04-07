@@ -63,7 +63,7 @@ station_data[,1] <- NULL
 station_info['Annual Rainfall (mm)'] <- rowSums(station_data)/21
 
 #Station Hurst Exponent
-station_info['Hurst exponent'] <- hurst(station_data)
+station_info['Hurst Exponent'] <- hurst(station_data)
 
 #Saving Aditional File 1
 colnames(station_info)[2] <- 'Station Name'
