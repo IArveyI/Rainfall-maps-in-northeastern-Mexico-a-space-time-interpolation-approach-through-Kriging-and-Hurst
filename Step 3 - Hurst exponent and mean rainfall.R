@@ -66,8 +66,9 @@ station_info['Annual Rainfall (mm)'] <- rowSums(station_data)/21
 station_info['Hurst exponent'] <- hurst(station_data)
 
 #Saving Aditional File 1
-colnames(station_info) = gsub("\\.", " ",colnames(station_info))
-colnames(station_info) = gsub(" m ", " (m) ",colnames(station_info))
-colnames(station_info) = gsub("masl", "(masl)",colnames(station_info))
+colnames(station_info)[2] <- 'Station Name'
+colnames(station_info)[3] <- 'Latitude UTM (m)'
+colnames(station_info)[4] <- 'Longitude UTM (m)'
+colnames(station_info)[5] <- 'Elevation (masl)'
 write.csv(station_info, paste(path, 'Aditional File 1.csv', sep = ''),
           row.names = FALSE)
