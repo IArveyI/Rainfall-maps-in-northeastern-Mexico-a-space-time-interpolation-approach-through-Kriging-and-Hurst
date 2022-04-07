@@ -69,4 +69,5 @@ station_info['Hurst exponent'] <- hurst(station_data)
 colnames(station_info) = gsub("\\.", " ",colnames(station_info))
 colnames(station_info) = gsub(" m ", " (m) ",colnames(station_info))
 colnames(station_info) = gsub("masl", "(masl)",colnames(station_info))
-write.csv(station_info, paste(path, 'Aditional File 1.csv'), row.names = FALSE)
+write.csv(station_info, paste(path, 'Aditional File 1.csv', sep = ''),
+          row.names = FALSE)
