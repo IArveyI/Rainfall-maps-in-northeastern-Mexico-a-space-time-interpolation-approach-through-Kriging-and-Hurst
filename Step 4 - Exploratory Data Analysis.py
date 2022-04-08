@@ -14,11 +14,11 @@ import geopandas
 from libpysal.weights import Rook
 from pysal.lib import weights
 from shapely.geometry import MultiPoint , Polygon
-import skgstat as skg
-from skgstat import models
 import glob
 import itertools as it
 import os
+
+#Functions
 
 def Area(df):
     
