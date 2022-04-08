@@ -6,6 +6,7 @@ install.packages('dplyr')
 #Import libraries
 library(pracma)
 library(dplyr)
+
 #Functions
 
 hurst<-function(df){
