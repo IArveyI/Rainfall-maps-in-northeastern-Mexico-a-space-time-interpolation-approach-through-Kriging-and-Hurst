@@ -28,7 +28,7 @@ El *variograma* **_γ_** por definición es la varianza de las diferencias de un
     <img src="https://render.githubusercontent.com/render/math?math={\color{white}\gamma({\bf h}) = \frac{1}{2}Var[Z({\bf x %2B \bf h}) - Z({\bf x})] =                         \frac{1}{2}E\{[Z({\bf x %2B \bf h}) - Z({\bf x})]^{2}\}}#gh-dark-mode-only">
 </p>
 
- donde **γ** es independiente a la localización de **_x_** y dependiente solamente del vector **_h_**.
+ donde **_γ_** es independiente a la localización de **_x_** y dependiente solamente del vector **_h_**.
 
 El estimador clásico o variograma experimental (muestral) **_γ_*** es dado por la siguiente ecuacuión:
 
@@ -37,5 +37,16 @@ El estimador clásico o variograma experimental (muestral) **_γ_*** es dado por
     <img src="https://render.githubusercontent.com/render/math?math={\color{white}\gamma^{\ast}({\bf H}) = \frac{1}{2n_{c}}\sum_{i = 1}^{n_{c}}[Z({\bf x}_{i}               %2B {\bf h}) - Z({\bf x}_{i})]^{2}}#gh-dark-mode-only">
 </p>
 
+donde n<sub>c</sub> es el número de parejas de puntos conectados por todos los vectores **_h_** que pertenecen a una clase **_H_** de vectores cuya magnitud y dirección caen dentro de una región específica, ver la Fig.2 (en realidad 3).
 
-\gamma^{\ast}({\bf H}) = \frac{1}{2n_{c}}\sum_{i = 1}^{n_{c}}[Z({\bf x}_{i} %2B {\bf h}) - Z({\bf x}_{i})]^{2}
+<p align="center">
+  <img width="460" height="300" src="Images/Figure-3.jpg">
+</p>
+<p align="center">
+    <em>Fig. 2 - El vector h que va del centro del círculo a cualquier punto de la región sombreada es un vector cuya magnitud está comprendida entre                 |H| y |H + a|,  con dirección comprendia entre θ y θ + b. Todos los vectores dentro de la región sombreada (famila H son los que determinan el               promedio en la ecuación del variograma empírico.</em>
+</p>
+
+
+
+
+
