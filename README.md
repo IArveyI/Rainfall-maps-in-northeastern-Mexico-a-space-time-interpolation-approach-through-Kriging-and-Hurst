@@ -82,9 +82,4 @@ Cuatro de los modelos teóricos más utilizados para ajustar los valores del var
 
 El variograma esférico alcanza el valor umbral _C<sub>0</sub> + C_ exactamente cuando el rango es _|h|= R = a_.
 
-<p align="center">
-   <img src="https://render.githubusercontent.com/render/math?math=\gamma({\bf h}) = \left\{ \begin{array}{ll}C_{0} %2B C\left(1 - e^{-\frac{\vert {\bf                    h}\vert}{a}}\right), & \mbox{if $\vert{\bf h}\vert > 0$};\\0, & \mbox{if $\vert{\bf h}\vert = 0$}\end{array}\right#gh-light-mode-only">
-    <img src="https://render.githubusercontent.com/render/math?math={\color{white}\gamma({\bf h}) = \left\{ \begin{array}{ll}C_{0} %2B C\left(1 -                           e^{-\frac{\vert {\bf h}\vert}{a}}\right), & \mbox{if $\vert{\bf h}\vert > 0$};\\0, & \mbox{if $\vert{\bf h}\vert = 0$}\end{array}}#gh-dark-                   mode-only">
-</p>
-
-
+        
