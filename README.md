@@ -82,4 +82,8 @@ Cuatro de los modelos teóricos más utilizados para ajustar los valores del var
 
 El variograma esférico alcanza el valor umbral _C<sub>0</sub> + C_ exactamente cuando el rango es _|h|= R = a_.
 
+<p align="center">
+  <img src="https://i.ibb.co/7t9wDSd/Equation-1.jpg" border="0" width="460">
+</p>
+
         
