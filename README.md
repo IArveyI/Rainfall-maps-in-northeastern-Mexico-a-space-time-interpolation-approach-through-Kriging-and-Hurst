@@ -39,10 +39,10 @@ El estimador clásico o variograma experimental (muestral) **_γ_*** es dado por
     <img src="https://render.githubusercontent.com/render/math?math={\color{white}\gamma^{\ast}({\bf H}) = \frac{1}{2n_{c}}\sum_{i = 1}^{n_{c}}[Z({\bf x}_{i}               %2B {\bf h}) - Z({\bf x}_{i})]^{2}}#gh-dark-mode-only">
 </p>
 
-donde n<sub>c</sub> es el número de parejas de puntos conectados por todos los vectores **_h_** que pertenecen a una clase **_H_** de vectores cuya magnitud y dirección caen dentro de una región específica, ver la Fig.2 (en realidad 3).
+donde n<sub>c</sub> es el número de parejas de puntos conectados por todos los vectores **_h_** que pertenecen a una clase **_H_** de vectores cuya magnitud y dirección caen dentro de una región específica, ver la Fig.2.
 
 <p align="center">
-  <img width="460" height="300" src="Images/Figure-3.jpg">
+  <img width="460" height="300" src="Images/Figure-2.jpg">
 </p>
 <p align="center">
     <em>Fig. 2 - El vector h que va del centro del círculo a cualquier punto de la región sombreada es un vector cuya magnitud está comprendida entre                 |H| y |H + a|,  con dirección comprendia entre θ y θ + b. Todos los vectores dentro de la región sombreada (famila H) son los que determinan el               promedio en la ecuación del variograma empírico.</em>
@@ -51,10 +51,10 @@ donde n<sub>c</sub> es el número de parejas de puntos conectados por todos los 
 
 **PARÁMETROS DEL VARIOGRAMA**
 
-El modelo teórico asociado al variograma empírico depende en general de tres parámetros independientes conocidos como el efecto *nugget* _C<sub>0</sub>_, la *meseta* parcial _C_ y el *rango* _R_, ver la Fig.3 (en realidad fig4).
+El modelo teórico asociado al variograma empírico depende en general de tres parámetros independientes conocidos como el efecto *nugget* _C<sub>0</sub>_, la *meseta* parcial _C_ y el *rango* _R_, ver la Fig.3.
 
 <p align="center">
-  <img width="460" height="300" src="Images/Figure-4.jpg">
+  <img width="460" height="300" src="Images/Figure-3.jpg">
 </p>
 <p align="center">
     <em>Fig. 3 - A general theoretical model of the empirical variogram with its principal components: Range, Sill, Partial Sill and Nugget. The origin of           the horizontal scale corresponding to h<sub>min</sub> ≡ 0.</em>
@@ -69,10 +69,10 @@ El modelo teórico asociado al variograma empírico depende en general de tres p
 
 **MODELO TEÓRICO**
 
-Cuatro de los modelos teóricos más utilizados para ajustar los valores del variograma experimental o empírico son los siguientes \cite{mert4,montero5}, ver la Fig. 4 (en realidad fig5).
+Cuatro de los modelos teóricos más utilizados para ajustar los valores del variograma experimental o empírico son los siguientes \cite{mert4,montero5}, ver la Fig. 4.
 
 <p align="center">
-  <img width="460" height="300" src="Images/Figure-5.jpg">
+  <img width="460" height="300" src="Images/Figure-4.jpg">
 </p>
 <p align="center">
     <em>Fig. 4 - La figura muestra 4 de los modelos teóricos de variogramas más utilizados, un modelo esférico (curva azul), un modelo lineal (curva verde),         un modelo Gaussiano (curva morada) y un modelo exponencial (curva naranja). Para fines de comparación en todos los casos se han utilizado los mismos         parámetros: C<sub>0</sub> = 1, C = 3, y a = 1.5. La figura muestra también el valor del rango para cada modelo: R = a, √3a, 3a para los modelos               exponencial y lineal, Gaussiano, y exponencial, respectivamente.</em>
@@ -83,7 +83,7 @@ Cuatro de los modelos teóricos más utilizados para ajustar los valores del var
 El variograma esférico alcanza el valor umbral _C<sub>0</sub> + C_ exactamente cuando el rango es _|h|= R = a_.
 
 <p align="center">
-  <img src="https://i.ibb.co/7t9wDSd/Equation-1.jpg" border="0" width="460">
+  <img width="460" src="Images/Equation-1.jpg">
 </p>
 
         
