@@ -80,10 +80,43 @@ Cuatro de los modelos teóricos más utilizados para ajustar los valores del var
 
 **Variograma esférico**
 
-El variograma esférico alcanza el valor umbral _C<sub>0</sub> + C_ exactamente cuando el rango es _|h|= R = a_.
-
 <p align="center">
-  <img width="460" src="Images/Equation-1.jpg">
+  <img width="460" src="Images/Equation-1.JPG">
 </p>
 
-        
+El variograma esférico alcanza el valor umbral _C<sub>0</sub> + C_ exactamente cuando el rango es _|h|= R = a_.
+
+**Variograma exponencial**
+
+<p align="center">
+  <img width="460" src="Images/Equation-2.JPG">
+</p>
+
+Aunque teóricamente el valor del variograma para el modelo exponencial alcanza el umbral _C<sub>0</sub> + C_ cuando _|h|→∞_, en la práctica se dice que se ha alcanzado dicho umbral para el valor  _|h| = a*_ tal que _γ(a*) - C<sub>0</sub> = 0.95C_, esto es, para un rango efectivo igual a _R ≡ a* ≈ 3a_.
+
+**Variograma Gaussiano**
+
+<p align="center">
+  <img width="460" src="Images/Equation-3.JPG">
+</p>
+
+Justo como en el modelo exponencial, en la práctica se dice que el variograma Gaussiano alcanza el umbral _C<sub>0</sub> + C_ cuando el rango efectivo _R ≡ a*_ es tal que _γ(a*) - C<sub>0</sub> = 0.95C_, esto es, cuando _R ≡ a* ≈ √3a_.
+
+**Variograma lineal**
+
+<p align="center">
+  <img width="460" src="Images/Equation-4.JPG">
+</p>
+
+**INTERPOLACIÓN DE KRIGING ORDINARIO**
+
+El método de Kriging Ordinario supone que los datos observados representan una realización de un proceso estocástico espacial estacionario de segundo orden, esto es, que la media del proceso estocástico es una constante y que su función de autocovarianza depende únicamente de la distancia de separación entre los puntos observados. 
+
+En el Kriging Ordinario la estimación _Ẑ(x<sub>0</sub>)_ del valor del campo escalar en el punto _x<sub>0</sub>_ es una combinación lineal de los valores observados _Ẑ(x<sub>i</sub>)_ del campo escalar en cada uno de los puntos de observación _x<sub>i</sub>_, es decir:
+
+<p align="center">
+   <img src="https://render.githubusercontent.com/render/math?math={\hat Z}({\bf x}_{0}) = \sum_{i = 1}^{n}\lambda_{i}Z({\bf x}_{i})#gh-light-mode-only">
+   <img src="https://render.githubusercontent.com/render/math?math={\color{white}{\hat Z}({\bf x}_{0})=\sum_{i=1}^{n}\lambda_{i}Z({\bf x}_{i})}#gh-dark-mode-             only">
+</p>
+
+donde _Ẑ(x<sub>0</sub>)_ es el valor estimado del campo aleatorio _Z_ en  _x<sub>0</sub>_, _Ẑ(x<sub>i</sub>)_ es el valor del campo aleatorio en el punto x<sub>i</sub>, y los λ<sub>i</sub> son los coeficientes (pesos) a ser determinados, para _i = 1, 2, ... , n_.
