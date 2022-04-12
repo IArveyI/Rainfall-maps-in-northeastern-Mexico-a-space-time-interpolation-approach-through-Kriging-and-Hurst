@@ -120,3 +120,9 @@ En el Kriging Ordinario la estimación _Ẑ(x<sub>0</sub>)_ del valor del campo 
 </p>
 
 donde _Ẑ(x<sub>0</sub>)_ es el valor estimado del campo aleatorio _Z_ en  _x<sub>0</sub>_, _Ẑ(x<sub>i</sub>)_ es el valor del campo aleatorio en el punto x<sub>i</sub>, y los λ<sub>i</sub> son los coeficientes (pesos) a ser determinados, para _i = 1, 2, ... , n_.
+
+## Metodología
+
+**Step 1 - Climatol data preparation**
+
+Para empezar, se recomienda crear una carpeta y establecerla como directorio para realizar el proyecto. Para este paso es necesario tener descargada la carpeta *Stations* en este directorio. En este paso, se leerá la información de datos mensuales de lluvia de cada estación y se analizará en que años existe la mayor cantidad de datos, con esto, se elige el periodo de 1998-2018. Después, se filtran las estaciones con una cantidad mayor o igual a _80%_ de datos en ese periodo. Con los valores de las estaciones quepasa este filtro 
