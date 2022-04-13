@@ -139,4 +139,11 @@ Es necesario tener descargados en el directorio de trabajo, los archivos *Statio
 
 Es necesario tener descargado en el directorio de trabajo el archivo *Boundary.csv* y el archivo *Aditional File 1.csv* generado en el paso anterior. Se genera el archivo *Area.csv* que se utilizará en el siguiente paso. Se generan los mapas de localización de las estaciones dentro de la zona de estudio, con un graiente de color que identifica la intensidad de los valores de lluvia y exponente de hurst. Se grafica las variables de lluvia y exponente de Hurst para ver su estacionaridad de acuerdo a su longitud, latitud y elevación, además, se mide la media y desviación estándar de todas las estaciones. Se obtienen las distribuciones de lluvia y exponente de Hurst para los datos originales, y además, se aplico una transformación a estos datos por logaritmo *(Log)*. A cada una de estas distribuciones se obtuvo su coeficiente de asimetría. Se observa que las distribuciones de datos originales de ambas variables son más simétricas para datos originales, por lo que se decide utilizar los datos originales para el modelo, ya que, para aplicar la interpolación Kriging es necesaria que la distribución de los datos sea simétrica. Además, se calculan los coeficientes de autocorrelación _I_ de Morán y _c_ de Geary. Para esto, la región de estudio se dividió en regiones de acuerdo a un diagrama de Voronoi, tomando cada estación como nodo, una vez hecho esto, se calcularon los coeficientes de autocorrelación.
 
+**STEP 5 - VARIOGRAM MAP**
+
+Es necesario tener descargado el archivo *Aditional File 1.csv* en el directorio de trabajo. Este programa realiza el mapa variográfico de la región de estudio, esto sirve para identificar anisotropía en la región y la dirección de los ejes.
+
+**STEP 6 - VARIOGRAM PARAMETERS**
+
+Se necesita el archivo *Aditional File 1.csv* en el directorio de trabajo. Aquí, se calculan los parámetros de los modelos teóricos que mejor se ajustan a los variogramas experimentales de cada variable. Se utilizan los modelos experimental, Gaussiano y esférico. Se generan los archivos con los parámetros de cada modelo en *Rainfall Parameters.csv* para datos de lluvia y *Hurst Parameters.csv* para valores del exponente de Hurst.
 
