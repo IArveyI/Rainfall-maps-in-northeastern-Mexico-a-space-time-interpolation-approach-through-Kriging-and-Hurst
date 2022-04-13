@@ -147,3 +147,10 @@ Es necesario tener descargado el archivo *Aditional File 1.csv* en el directorio
 
 Se necesita el archivo *Aditional File 1.csv* en el directorio de trabajo. Aquí, se calculan los parámetros de los modelos teóricos que mejor se ajustan a los variogramas experimentales de cada variable. Se utilizan los modelos experimental, Gaussiano y esférico. Se generan los archivos con los parámetros de cada modelo en *Rainfall Parameters.csv* para datos de lluvia y *Hurst Parameters.csv* para valores del exponente de Hurst.
 
+**STEP 7 - KRIGING MAPS**
+
+Se necesitan los archivos *Aditional File.csv*, *Area.csv*, *Rainfall Parameters.csv*, *Hurst Parameters.csv*. Se realiza los mapas de interpolación por medio del Kriging Ordinario para ambas variables. Los mapas presentan un gradiente de color para identificar las intensidad de cada variable. Además, se realiza una validación cruzada, donde se obtienen métricas como la media del error, el Mean Squared Prediction Error (MSPE), el Normalized Mean Square Error (NMSE), el coeficiente de determinación entre los datos observados y los predichos, y los predichos y los errores.
+
+
+
+
