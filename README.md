@@ -180,3 +180,13 @@ Por los valores de los coeficientes, se decide utilizar los valores originales d
 
 Ahora se pasa a hacer uso del mapa variográfico, en la Fig.8, dónde se establece el ángulo de los ejes de anisotropía, donde para ambas variables, se establece un ángulo de 130°. 
 
+<p align="center">
+  <img width="668" height="306" src="Images/Figure-8.png">
+</p>
+<p align="center">
+    <em>Fig. 8 - Mapa variográfico de ambas variables, donde se observa la anisotrpía de la región y el ángulo del eje donde la variación es mínima.  </em>
+</p>
+
+
+
+
