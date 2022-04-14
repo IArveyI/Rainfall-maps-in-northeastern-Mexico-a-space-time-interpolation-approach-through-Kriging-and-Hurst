@@ -164,7 +164,7 @@ La localización de la región de estudio y de cada estación y la intensidad de
   <img width="628" height="280" src="Images/Figure-6.png">
 </p>
 <p align="center">
-    <em>Fig. 6 - Se idnetifica la intensidad de cada variable con un gradiente de color de tonalidades azules, donde los tonos claros indican mayor                   intensidad. </em>
+    <em>Fig. 6 - Se identifica la intensidad de cada variable con un gradiente de color de tonalidades azules, donde los tonos claros indican mayor                   intensidad. </em>
 </p>
 
 La distribución de los datos originales de cada variable se observa en la Fig.7, junto a cada una de ellas, se encuentra la distribución de los datos transformados por medio de Logaritmo *Log*. A cada distribución, se calculó el coeficiente de asimetría (skewness), se pretende utilizar los datos con coeficiente más cercano a 0, es decir, más simétrica. 
@@ -173,7 +173,7 @@ La distribución de los datos originales de cada variable se observa en la Fig.7
   <img width="618" height="678" src="Images/Figure-7.png">
 </p>
 <p align="center">
-    <em>Fig. 7 - Para datos de lluvia originales se obtuvo un skewness de 0.33, y para los datos transformados de -0.92. Para los datos originales del               exponente de Hurst se tiene un coeficiente de  -0.07, y de -1.03 para datos transformados. </em>
+    <em>Fig. 7 - Para datos de lluvia originales (en la parte superior) se obtuvo un skewness de 0.33, y para los datos transformados de -0.92. Para los             datos originales del exponente de Hurst (en la parte inferior) se tiene un coeficiente de  -0.07, y de -1.03 para datos transformados. </em>
 </p>
 
 Por los valores de los coeficientes, se decide utilizar los valores originales de cada variable.
@@ -184,9 +184,16 @@ Ahora se pasa a hacer uso del mapa variográfico, en la Fig.8, dónde se estable
   <img width="668" height="306" src="Images/Figure-8.png">
 </p>
 <p align="center">
-    <em>Fig. 8 - Mapa variográfico de ambas variables, donde se observa la anisotrpía de la región y el ángulo del eje donde la variación es mínima.  </em>
+    <em>Fig. 8 - Mapa variográfico de ambas variables, el la izquierda valores de lluvia y en la derecha del exponente de Hurst, donde se observa la                 anisotrpía de la región y el ángulo del eje donde la variación es mínima.  </em>
 </p>
 
+Una vez que se conoce la dirección, se pasa a realizar el variograma experimental de cada variable, y se ajusta a los modelos teóricos exponencial, Gausiano y esférico. Se utilizan los parámetros de dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _150000 metros_ y un total de _20_ lags para datos de lluvia, para el exponente de Hurst se utilizaron los parámetros con dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _100000 metros_ y un total de _15_ lags. 
 
+<p align="center">
+  <img width="640" height="822" src="Images/Figure-9.png">
+</p>
+<p align="center">
+    <em>Fig. 9 - Variogramas experimentales de valores de lluvia (izquierda) y exponente de Hurst (derecha) ajustados a modelos esféricos, Gaussianos y               esféricos.  </em>
+</p>
 
 
