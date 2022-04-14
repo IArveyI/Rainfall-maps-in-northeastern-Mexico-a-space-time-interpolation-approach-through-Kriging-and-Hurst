@@ -175,3 +175,5 @@ La distribución de los datos originales de cada variable se observa en la Fig.7
 <p align="center">
     <em>Fig. 7 - Para datos de lluvia originales se obtuvo un skewness de 0.33, y para los datos transformados de -0.92. Para los datos originales del               exponente de Hurst se tiene un coeficiente de  -0.07, y de -1.03 para datos transformados. </em>
 </p>
+
+Por los valores de los coeficientes, se decide utilizar los valores originales de cada variable.
