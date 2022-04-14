@@ -123,6 +123,11 @@ donde _Ẑ(x<sub>0</sub>)_ es el valor estimado del campo aleatorio _Z_ en  _x<s
 
 ## Metodología
 
+En general, la metodología sigue los pasos de la Fig.5:
+<p align="center">
+  <img width="586" height = "306" src="Images/Figure-5.png">
+</p>
+
 **STEP 1 - CLIMATOL DATA PREPARATION**
 
 Para empezar, se recomienda crear una carpeta y establecerla como directorio de trabajo para realizar el proyecto. Para este paso es necesario tener descargada la carpeta *Stations* en este directorio. En este paso, se lee la información de datos mensuales de lluvia de cada estación y se analizan en que años existe la mayor cantidad de datos, con esto, se elige el periodo de _1998-2018_. Después, se filtran las estaciones con una cantidad mayor o igual a _80%_ de datos en ese periodo. Con los valores de las estaciones que pasan este filtro, se preparan los archivos para utilizarlos en la libreria *Climatol*. El programa crea la carpeta *Climatol* dentro del directorio de trabajo con dos archivos, *Rmon_1998-2018.est* con las coordenadas e información de cada estación y *Rmon_1998-2018.dat* con los valores mensuales de lluvia de las estaciones. Estos  archivos serán necesarios para el siguiente paso.
@@ -153,4 +158,20 @@ Se necesitan los archivos *Aditional File.csv*, *Area.csv*, *Rainfall Parameters
 
 ## Resultados
 
+La localización de la región de estudio y de cada estación y la intensidad de las variables, lluvia media anual y el exponente de Hurst, se observan en la Fig.6. La información necesaria se encuentra en el archivo *Aditional File 1.csv*.
 
+<p align="center">
+  <img width="628" height="280" src="Images/Figure-6.png">
+</p>
+<p align="center">
+    <em>Fig. 6 - Se idnetifica la intensidad de cada variable con un gradiente de color de tonalidades azules, donde los tonos claros indican mayor                   intensidad. </em>
+</p>
+
+La distribución de los datos originales de cada variable se observa en la Fig.7, junto a cada una de ellas, se encuentra la distribución de los datos transformados por medio de Logaritmo *Log*. A cada distribución, se calculó el coeficiente de asimetría (skewness), se pretende utilizar los datos con coeficiente más cercano a 0, es decir, más simétrica. 
+
+<p align="center">
+  <img width="618" height="678" src="Images/Figure-7.png">
+</p>
+<p align="center">
+    <em>Fig. 7 - Para datos de lluvia originales se obtuvo un skewness de 0.33, y para los datos transformados de -0.92. Para los datos originales del               exponente de Hurst se tiene un coeficiente de  -0.07, y de -1.03 para datos transformados. </em>
+</p>
