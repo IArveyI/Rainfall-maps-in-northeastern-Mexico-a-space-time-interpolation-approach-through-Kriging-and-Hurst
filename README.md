@@ -177,3 +177,6 @@ La distribución de los datos originales de cada variable se observa en la Fig.7
 </p>
 
 Por los valores de los coeficientes, se decide utilizar los valores originales de cada variable.
+
+Ahora se pasa a hacer uso del mapa variográfico, en la Fig.8, dónde se establece el ángulo de los ejes de anisotropía, donde para ambas variables, se establece un ángulo de 130°. 
+
