@@ -187,7 +187,7 @@ Ahora se pasa a hacer uso del mapa variográfico, en la Fig.8, dónde se estable
     <em>Fig. 8 - Mapa variográfico de ambas variables, el la izquierda valores de lluvia y en la derecha del exponente de Hurst, donde se observa la                 anisotrpía de la región y el ángulo del eje donde la variación es mínima.  </em>
 </p>
 
-Una vez que se conoce la dirección, se pasa a realizar el variograma experimental de cada variable, y se ajusta a los modelos teóricos exponencial, Gausiano y esférico. Se utilizan los parámetros de dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _150000 metros_ y un total de _20_ lags para datos de lluvia, para el exponente de Hurst se utilizaron los parámetros con dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _100000 metros_ y un total de _15_ lags. 
+Una vez que se conoce la dirección, se pasa a realizar el variograma experimental de cada variable, y se ajusta a los modelos teóricos exponencial, Gausiano y esférico. Se utilizan los parámetros de dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _150000 metros_ y un total de _20_ lags para datos de lluvia, para el exponente de Hurst se utilizaron los parámetros con dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _100000 metros_ y un total de _25_ lags. 
 
 <p align="center">
   <img width="640" height="822" src="Images/Figure-9.png">
