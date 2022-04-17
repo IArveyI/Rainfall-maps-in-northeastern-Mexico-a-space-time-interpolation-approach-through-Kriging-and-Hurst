@@ -205,3 +205,8 @@ Con estos variogramas, se decide aplicar el Kriging Ordinario para variogramás 
     <em>Fig. 10 - En la parte superior se observan los mapas de lluvia para modelos exponencial y esférico, y en la parte inferior para el exponente de               Hurst.  </em>
 </p>
 
+## Discusión y conclusión
+
+Los hallazgos muestran que las zonas que registran anti-persistencia y gran cantidad de lluvia, de acuerdo con la orografía, se localizan principalmente al pie de las montañas de la Eastern Sierra Madre (SMO). Otra característica de esta zona es la anisotropía de la antipersistencia (direccionalidad espacial a _130°_), indicada como una franja amarilla en la parte central de la región y que coincide con la abundante vegetación de la SMO. Esto implica que en esta franja llueve pocos días al año pero abundantemente, haciendo a estas áreas ideales para la recolección de agua, lo que justifica la localización de las presas; La Boca y Cerro Prieto. En contraste hay zonas con clima predominantemente árido, localizadas en dirección suroeste de la región a una altitud de _1600 masl_. Otra contribución de esta metodología es la identificación geográfica de zonas húmedas, con excelentes condiciones para la agricultura y ganadería.
+
+De otra manera, las zonas con una menor cantidad de lluvia histórica, tiende a presentarse un exponente de Hurst persistente, haciendo las temporadas de lluvias extensas, pero de poca lluvia. Estos resultados pueden evitar la construcción de ciudades sin el debido control de inundaciones en estas zonas, la creación de lagos artificiales nacientes de zonas con lluvia anti-persistente a las otras zonas del área, o la construcción de presas para recaudar y aprovechar de una manera mas eficiente las condiciones de lluvia de estos lugares.
