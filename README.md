@@ -1,57 +1,56 @@
 # Rainfall maps in northeastern Mexico a space time interpolation approach through Kriging and Hurst
 
-Este repositorio está hecho con el propósito lograr la reproducibilidad de la metodología aplicada en el artículo : "Rainfall maps in northeastern Mexico a space time interpolation approach through Kriging and Hurst" (hipervínculo al artículo).
+This repository is made with the purpose of achieving reproducibility of the methodology applied in the article: "Rainfall maps in northeastern México, a space-time interpolation approach through Kriging and Hurst" (hyperlink to the article).
 
-## Objetivo 
+## Aim
 
-La región de estudio es la cuenca del Rio San Juan ubicada en el noreste de México, entre los estados de Coahuila, Nuevo León y Tamaulipas. Actualmente, existe una escazes de agua en esta zona, por lo que se realiza un análisis geoespacial con interpolación de Kriging, mostrando el comportamiento de la zona en base a la cantidad promedio anual de lluvia y su comportamiento histórico de  persistencia o anti-persistencia utilizando el exponente de Hurst.
+The study region is the San Juan River basin, located in northeastern Mexico, between the states of Coahuila, Nuevo León and Tamaulipas. Currently, there is a water scarce in this area, so a geospatial analysis is performed with Kriging interpolation, showing the behavior of the area based on the average annual amount of rainfall and its historical behavior of persistence or anti-persistence using the Hurst exponent.
 
-## Marco teórico
+## Introduction
 
-Para información más detallada, revisar el Archivo Aditional 2 (hipervínculo al archivo adicional 2).
+For more detailed information, see Additional File 2 (hyperlink to Additional File 2).
 
-Los datos observados son mediciones de la cantidad de lluvia en distintos puntos de una región específica. La correlación espacial del campo escalar _**Z**_ como función de la distancia se conoce como *variograma* o *semivariograma*. En aclaración, aunque variograma y semivariograma son comúnmente utilizaos indistintamente, realmente pueden aportar ciertas diferencias, por ello usar el término variograma insta a realizar un cálculo completo en vez de uno parcial que es representado en el semivariograma.
+Observed data are measurements of the amount of rainfall at different points in a specific region. The spatial correlation of the scalar field _**Z**_ as a function of distance is known as a *variogram* or *semivariogram*. For clarification, although variogram and semivariogram are commonly used interchangeably, they can actually provide certain differences, so using the term variogram urges a complete calculation rather than the partial one that is represented in the semivariogram.
 
-Considere dos puntos con vectores de posición **_x_** y **_x+h_**, respectivamente, ver la Fig. 1.
+Consider two points with position vectors **_x_** and **_x+h_**, respectively, see Fig. 1.
 
 <p align="center">
   <img width="460" height="300" src="Images/Figure-1.jpg">
 </p>
 <p align="center">
-    <em>Fig. 1 - Campo escalar Z(x) para este estudio son los valores de lluvia o exponente de Hurst. </em>
+    <em>Fig. 1 - Scalar field Z(x) for this study are the rainfall values or Hurst exponent.</em>
 </p>
 
-El *variograma* **_γ_** por definición es la varianza de las diferencias de un campo aleatorio estacionario, esto es: 
+The *variogram* **_γ_** by definition is the variance of the differences of a stationary random field, that is:
 
 <p align="center">
     <img src="https://render.githubusercontent.com/render/math?math=\gamma({\bf h}) = \frac{1}{2}Var[Z({\bf x %2B \bf h}) - Z({\bf x})] =                                   \frac{1}{2}E\{[Z({\bf x %2B \bf h}) - Z({\bf x})]^{2}\}#gh-light-mode-only">
     <img src="https://render.githubusercontent.com/render/math?math={\color{white}\gamma({\bf h}) = \frac{1}{2}Var[Z({\bf x %2B \bf h}) - Z({\bf x})] =                         \frac{1}{2}E\{[Z({\bf x %2B \bf h}) - Z({\bf x})]^{2}\}}#gh-dark-mode-only">
 </p>
 
- donde **_γ_** es independiente a la localización de **_x_** y dependiente solamente del vector **_h_**.
+where **_γ_** is independent to the location of **_x_** and dependent only on the vector **_h_**.
 
-**VARIOGRAMA EXPERIMENTAL**
+**EXPERIMENTAL VARIOGRAM**
 
-El estimador clásico o variograma experimental (muestral) **_γ_*** es dado por la siguiente ecuacuión:
+The classical estimator or experimental (sample) variogram **_γ_*** is given by the following equation:
 
 <p align="center">
    <img src="https://render.githubusercontent.com/render/math?math=\gamma^{\ast}({\bf H}) = \frac{1}{2n_{c}}\sum_{i = 1}^{n_{c}}[Z({\bf x}_{i}                            %2B {\bf h}) - Z({\bf x}_{i})]^{2}#gh-light-mode-only">
     <img src="https://render.githubusercontent.com/render/math?math={\color{white}\gamma^{\ast}({\bf H}) = \frac{1}{2n_{c}}\sum_{i = 1}^{n_{c}}[Z({\bf x}_{i}               %2B {\bf h}) - Z({\bf x}_{i})]^{2}}#gh-dark-mode-only">
 </p>
 
-donde n<sub>c</sub> es el número de parejas de puntos conectados por todos los vectores **_h_** que pertenecen a una clase **_H_** de vectores cuya magnitud y dirección caen dentro de una región específica, ver la Fig.2.
+where n<sub>c</sub> is the number of pairs of points connected by all vectors **_h_** belonging to a class **_H_** of vectors whose magnitude and direction fall within a specific region, see Fig.2.
 
 <p align="center">
   <img width="460" height="300" src="Images/Figure-2.jpg">
 </p>
 <p align="center">
-    <em>Fig. 2 - El vector h que va del centro del círculo a cualquier punto de la región sombreada es un vector cuya magnitud está comprendida entre                 |H| y |H + a|,  con dirección comprendia entre θ y θ + b. Todos los vectores dentro de la región sombreada (famila H) son los que determinan el               promedio en la ecuación del variograma empírico.</em>
+    <em>Fig. 2 - The vector h that goes from the center of the circle to any point in the shaded region is a vector whose magnitude is between |H| and |H +           a|, with direction between θ and θ + b. All the vectors within the shaded region (family H) are the ones that determine the average in the empirical         variogram equation.</em>
 </p>
 
 
-**PARÁMETROS DEL VARIOGRAMA**
-
-El modelo teórico asociado al variograma empírico depende en general de tres parámetros independientes conocidos como el efecto *nugget* _C<sub>0</sub>_, la *meseta* parcial _C_ y el *rango* _R_, ver la Fig.3.
+**VARIOGRAM PARAMETERS**
+The theoretical model associated with the empirical variogram depends in general on three independent parameters known as the *nugget* effect _C<sub>0</sub>_, the partial *plateau* _C_ and the *range* _R_, see Fig.3.
 
 <p align="center">
   <img width="460" height="300" src="Images/Figure-3.jpg">
@@ -60,12 +59,11 @@ El modelo teórico asociado al variograma empírico depende en general de tres p
     <em>Fig. 3 - A general theoretical model of the empirical variogram with its principal components: Range, Sill, Partial Sill and Nugget. The origin of           the horizontal scale corresponding to h<sub>min</sub> ≡ 0.</em>
 </p>
 
+- *The nugget effect : According to the definition of the variogram, when _h = 0_ the variogram is also zero, _**γ**(0) = 0_. However, in practice the theoretical value _h = 0_ corresponds to a minimum separation value _h<sub>min</sub>_ between rainfall stations. This empirical "residual" value of the variogram is known as the *nugget effect* and is represented by _**γ***(0)= C<sub>0</sub>_.
 
- - *El efecto nugget* : De acuerdo con la definición del variograma, cuando _h = 0_ el variograma también vale cero, _**γ**(0) = 0_. Sin embargo, en la práctica el valor teórico _h = 0_ corresponde a un valor de separación mínimo _h<sub>min</sub>_ entre las estaciones pluviométricas. A este valor "residual" empírico del variograma se le conoce como *efecto nugget* y se representa por _**γ***(0)= C<sub>0</sub>_.
+- *Partial sill* : Again, according to the definition, in a process without long-range correlations, when _h→∞_ ρ→0 is expected, ρ being the correlation coefficient, therefore, the variogram converges to the constant value _f<sub>0</sub>_. In practice, however, it is observed that from a certain maximum distance _h<sub>max</sub>_ the empirical variogram "stabilizes", that is, the variogram practically does not grow when _h_ increases.This "asymptotic" value, measured from the *nugget*, where the variogram levels with the horizontal is known as the *partial plateau* and is symbolized by _C_. The sum _C<sub>0</sub> + C_ is conceived as the *plateau* or threshold of the variogram.
 
-- *Meseta parcial* : Nuevamente, de acuerdo con la definición, en un proceso sin correlaciones de largo alcance, cuando _h→∞_  se espera que ρ→0, siendo ρ el coeficiente de correlación, por lo tanto, el variograma converge al valor constante _f<sub>0</sub>_. En la práctica, sin embargo, se observa que a partir de cierta distancia máxima _h<sub>max</sub>_ el variograma empírico se "estabiliza", esto es, el variograma prácticamente ya no crece cuando _h_ aumenta. Este valor "asintótico", medido desde el *nugget*, donde el variograma se nivela con la horizontal se conoce como la *meseta parcial* y se simboliza por _C_. La suma _C<sub>0</sub> + C_ se conce como la *meseta* o umbral del variograma.
-
-- *Rango* : El valor  _h<sub>max</sub>_ para el cual el modelo del variograma empírico comienza a "aplanarse" se denomina *rango* y se denota por el símbolo _R ≡ h<sub>max</sub>_. Observaciones del campo escalar en puntos separados una distancia mayor al rango _R_ se consideran no correlacionadas, esto es, si _|x<sub>i</sub> - x<sub>j</sub>| > R_ entonces _Cov[Z(x<sub>i</sub>), Z(x<sub>j</sub>)] = 0_, _i ≠ j_.
+- *Range* : The value _h<sub>max</sub>_ for which the empirical variogram model begins to "flatten" is called *range* and is denoted by the symbol _R ≡ h<sub>max</sub>_. Observations of the scalar field at points separated by a distance greater than the range _R_ are considered to be uncorrelated, i.e., if _|x<sub>i</sub> - x<sub>j</sub>| > R_ then _Cov[Z(x<sub>i</sub>), Z(x<sub>j</sub>)] = 0_, _i ≠ j_. 
 
 **MODELO TEÓRICO**
 
