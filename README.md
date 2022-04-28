@@ -61,19 +61,19 @@ The theoretical model associated with the empirical variogram depends in general
 
 - *The nugget effect : According to the definition of the variogram, when _h = 0_ the variogram is also zero, _**γ**(0) = 0_. However, in practice the theoretical value _h = 0_ corresponds to a minimum separation value _h<sub>min</sub>_ between rainfall stations. This empirical "residual" value of the variogram is known as the *nugget effect* and is represented by _**γ***(0)= C<sub>0</sub>_.
 
-- *Partial sill* : Again, according to the definition, in a process without long-range correlations, when _h→∞_ ρ→0 is expected, ρ being the correlation coefficient, therefore, the variogram converges to the constant value _f<sub>0</sub>_. In practice, however, it is observed that from a certain maximum distance _h<sub>max</sub>_ the empirical variogram "stabilizes", that is, the variogram practically does not grow when _h_ increases.This "asymptotic" value, measured from the *nugget*, where the variogram levels with the horizontal is known as the *partial plateau* and is symbolized by _C_. The sum _C<sub>0</sub> + C_ is conceived as the *plateau* or threshold of the variogram.
+- *Partial sill* : Again, according to the definition, in a process without long-range correlations, when _h→∞_ ρ→0 is expected, ρ being the correlation coefficient, therefore, the variogram converges to the constant value _f<sub>0</sub>_. In practice, however, it is observed that from a certain maximum distance _h<sub>max</sub>_ the empirical variogram "stabilizes", that is, the variogram practically does not grow when _h_ increases.This "asymptotic" value, measured from the *nugget*, where the variogram levels with the horizontal is known as the *partial sill* and is symbolized by _C_. The sum _C<sub>0</sub> + C_ is conceived as the *sill* or threshold of the variogram.
 
 - *Range* : The value _h<sub>max</sub>_ for which the empirical variogram model begins to "flatten" is called *range* and is denoted by the symbol _R ≡ h<sub>max</sub>_. Observations of the scalar field at points separated by a distance greater than the range _R_ are considered to be uncorrelated, i.e., if _|x<sub>i</sub> - x<sub>j</sub>| > R_ then _Cov[Z(x<sub>i</sub>), Z(x<sub>j</sub>)] = 0_, _i ≠ j_. 
 
-**MODELO TEÓRICO**
+**THEORETICAL MODEL**
 
-Cuatro de los modelos teóricos más utilizados para ajustar los valores del variograma experimental o empírico son los siguientes \cite{mert4,montero5}, ver la Fig. 4.
+Four of the most commonly used theoretical models for fitting the experimental or empirical variogram values are as follows, see Fig. 4.
 
 <p align="center">
   <img width="460" height="300" src="Images/Figure-4.jpg">
 </p>
 <p align="center">
-    <em>Fig. 4 - La figura muestra 4 de los modelos teóricos de variogramas más utilizados, un modelo esférico (curva azul), un modelo lineal (curva verde),         un modelo Gaussiano (curva morada) y un modelo exponencial (curva naranja). Para fines de comparación en todos los casos se han utilizado los mismos         parámetros: C<sub>0</sub> = 1, C = 3, y a = 1.5. La figura muestra también el valor del rango para cada modelo: R = a, √3a, 3a para los modelos               exponencial y lineal, Gaussiano, y exponencial, respectivamente.</em>
+    <em>The figure shows 4 of the most commonly used theoretical variogram models, a spherical model (blue curve), a linear model (green curve), a Gaussian           model (purple curve) and an exponential model (orange curve). For comparison purposes, the same parameters have been used in all cases: C<sub>0</sub>         = 1, C = 3, and a = 1.5. The figure also shows the value of the range for each model: R = a, √3a, 3a for the exponential and linear, Gaussian, and           exponential models, respectively.</em>
 </p>
 
 **Variograma esférico**
