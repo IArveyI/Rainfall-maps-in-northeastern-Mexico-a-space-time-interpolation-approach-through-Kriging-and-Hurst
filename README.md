@@ -129,83 +129,83 @@ In general, the methodology follows the steps in Fig. 5:
 
 **STEP 1 - CLIMATOL DATA PREPARATION**
 
-Para empezar, se recomienda crear una carpeta y establecerla como directorio de trabajo para realizar el proyecto. Para este paso es necesario tener descargada la carpeta *Stations* en este directorio. En este paso, se lee la información de datos mensuales de lluvia de cada estación y se analizan en que años existe la mayor cantidad de datos, con esto, se elige el periodo de _1998-2018_. Después, se filtran las estaciones con una cantidad mayor o igual a _80%_ de datos en ese periodo. Con los valores de las estaciones que pasan este filtro, se preparan los archivos para utilizarlos en la libreria *Climatol*. El programa crea la carpeta *Climatol* dentro del directorio de trabajo con dos archivos, *Rmon_1998-2018.est* con las coordenadas e información de cada estación y *Rmon_1998-2018.dat* con los valores mensuales de lluvia de las estaciones. Estos  archivos serán necesarios para el siguiente paso.
+To begin with, it is recommended to create a folder and set it as the working directory for the project. For this step it is necessary to have downloaded the *Stations* folder in this directory. In this step, the monthly rainfall data information of each station is read and analyzed in which years there is the largest amount of data, with this, the period of _1998-2018_ is chosen. Then, the stations with a quantity greater than or equal to _80%_ of data in that period are filtered. With the values of the stations that pass this filter, files are prepared for use in the *Climatol* library. The program creates the *Climatol* folder inside the working directory with two files, *Rmon_1998-2018.est* with the coordinates and information of each station and *Rmon_1998-2018.dat* with the monthly rainfall values of the stations. These files will be needed for the next step.
 
 **STEP 2 - HOMOGENIZATION BY CLIMATOL**
 
-Para este paso, es necesario establecer como directorio de trabajo la carpeta *Climatol* creada anteriormente. Este programa genera distintos archivos, el archivo *Rmon_1998-2018.txt* es un diagnóstico general de las estaciones, de este archivo se obtiene la información del porcentaje de datos originales (POD) en el archivo *Stations POD.csv*, y el archivo *Rmon_1998-2018.pdf* es un informe con un análisis exploratorio de datos y el procedimiento de imputación de los datos. El archivo *Rmon_1998-2018_series.csv* contiene las series mensuales de las estaciones con datos ya imputados. Para conocer más de cómo funciona la librería [*Climatol*](https://www.climatol.eu/) visitar su sitio oficial.
+For this step, it is necessary to set as working directory the *Climatol* folder created previously. This program generates different files, the file *Rmon_1998-2018.txt* is a general diagnosis of the stations, from this file the information of the percentage of original data (POD) is obtained in the file *Stations POD.csv*, and the file *Rmon_1998-2018.pdf* is a report with an exploratory data analysis and the data imputation procedure. The file *Rmon_1998-2018_series.csv* contains the monthly series of stations with data already imputed. To learn more about how the [*Climatol*](https://www.climatol.eu/) library works, visit its official site.
  
 **STEP 3 - Hurst exponent and mean rainfall**
 
-Es necesario tener descargados en el directorio de trabajo, los archivos *Stations POD.csv* y *Stations Info.csv*, y generar el archivo *Rmon_1998-2018_series.csv* del paso 2 en la carpeta Climatol. Se filtran las estaciones con un _POD >= 80_ ya eliminados los datos outliers y ya homogeneizados. Este programa genera el archivo *Aditional File 1.csv* con la información de localización de las estaciones, la media anual de lluvia y exponente de Hurst de cada una.
+It is necessary to have the *Stations POD.csv* and *Stations Info.csv* files downloaded in the working directory, and to generate the *Rmon_1998-2018_series.csv* file from step 2 in the Climatol folder. The stations with a _POD >= 80_ are filtered out with the outliers data removed and homogenized. This program generates the file *Aditional File 1.csv* with the location information of the stations, the annual mean rainfall and Hurst exponent of each one.
 
 **STEP 4 - Exploratory Data Analysis**
 
-Es necesario tener descargado en el directorio de trabajo el archivo *Boundary.csv* y el archivo *Aditional File 1.csv* generado en el paso anterior. Se genera el archivo *Area.csv* que se utilizará en el siguiente paso. Se generan los mapas de localización de las estaciones dentro de la zona de estudio, con un graiente de color que identifica la intensidad de los valores de lluvia y exponente de hurst. Se grafica las variables de lluvia y exponente de Hurst para ver su estacionaridad de acuerdo a su longitud, latitud y elevación, además, se mide la media y desviación estándar de todas las estaciones. Se obtienen las distribuciones de lluvia y exponente de Hurst para los datos originales, y además, se aplico una transformación a estos datos por logaritmo *(Log)*. A cada una de estas distribuciones se obtuvo su coeficiente de asimetría. Se observa que las distribuciones de datos originales de ambas variables son más simétricas para datos originales, por lo que se decide utilizar los datos originales para el modelo, ya que, para aplicar la interpolación Kriging es necesaria que la distribución de los datos sea simétrica. Además, se calculan los coeficientes de autocorrelación _I_ de Morán y _c_ de Geary. Para esto, la región de estudio se dividió en regiones de acuerdo a un diagrama de Voronoi, tomando cada estación como nodo, una vez hecho esto, se calcularon los coeficientes de autocorrelación.
+It is necessary to have the *Boundary.csv* file and the *Aditional File 1.csv* file generated in the previous step downloaded to the working directory. The *Area.csv* file to be used in the next step is generated. The location maps of the stations within the study area are generated, with a color graph that identifies the intensity of the rainfall and Hurst exponent values. The rainfall and Hurst exponent variables are plotted to see their stationarity according to their longitude, latitude and elevation, and the mean and standard deviation of all stations are measured. Rainfall and Hurst exponent distributions are obtained for the original data, and a log *(Log)* transformation is applied to these data. The asymmetry coefficient was obtained for each of these distributions. It is observed that the original data distributions of both variables are more symmetrical for original data, so it was decided to use the original data for the model, since, to apply the Kriging interpolation it is necessary that the data distribution is symmetrical. In addition, Moran's _I_ and Geary's _c_ autocorrelation coefficients are calculated. For this, the study region was divided into regions according to a Voronoi diagram, taking each station as a node, once this was done, the autocorrelation coefficients were calculated.
 
 **STEP 5 - VARIOGRAM MAP**
 
-Es necesario tener descargado el archivo *Aditional File 1.csv* en el directorio de trabajo. Este programa realiza el mapa variográfico de la región de estudio, esto sirve para identificar anisotropía en la región y la dirección de los ejes.
+It is necessary to have downloaded the file *Aditional File 1.csv* in the working directory. This program makes the variographic map of the study region, this serves to identify anisotropy in the region and the direction of the axes.
 
 **STEP 6 - VARIOGRAM PARAMETERS**
 
-Se necesita el archivo *Aditional File 1.csv* en el directorio de trabajo. Aquí, se calculan los parámetros de los modelos teóricos que mejor se ajustan a los variogramas experimentales de cada variable. Se utilizan los modelos experimental, Gaussiano y esférico. Se generan los archivos con los parámetros de cada modelo en *Rainfall Parameters.csv* para datos de lluvia y *Hurst Parameters.csv* para valores del exponente de Hurst.
+The *Aditional File 1.csv* is needed in the working directory. Here, the parameters of the theoretical models that best fit the experimental variograms of each variable are calculated. The experimental, Gaussian and spherical models are used. The files with the parameters of each model are generated in *Rainfall Parameters.csv* for rainfall data and *Hurst Parameters.csv* for Hurst exponent values.
 
 **STEP 7 - KRIGING MAPS**
 
-Se necesitan los archivos *Aditional File.csv*, *Area.csv*, *Rainfall Parameters.csv*, *Hurst Parameters.csv*. Se realiza los mapas de interpolación por medio del Kriging Ordinario para ambas variables. Los mapas presentan un gradiente de color para identificar las intensidad de cada variable. Además, se realiza una validación cruzada, donde se obtienen métricas como la media del error, el Mean Squared Prediction Error (MSPE), el Normalized Mean Square Error (NMSE), el coeficiente de determinación entre los datos observados y los predichos, y los predichos y los errores.
+The files *Aditional File.csv*, *Area.csv*, *Rainfall Parameters.csv*, *Hurst Parameters.csv* are needed. The interpolation maps are made by means of Ordinary Kriging for both variables. The maps present a color gradient to identify the intensity of each variable. In addition, a cross validation is performed, where metrics such as mean error, Mean Squared Prediction Error (MSPE), Normalized Mean Square Error (NMSE), coefficient of determination between observed and predicted data, and predicted and errors are obtained.
 
 ## Resultados
 
-La localización de la región de estudio y de cada estación y la intensidad de las variables, lluvia media anual y el exponente de Hurst, se observan en la Fig.6. La información necesaria se encuentra en el archivo *Aditional File 1.csv*.
+The location of the study region and each station and the intensity of the variables, mean annual rainfall and Hurst exponent, are shown in Fig. 6. The necessary information can be found in the *Aditional File 1.csv*.
 
 <p align="center">
   <img width="628" height="280" src="Images/Figure-6.png">
 </p>
 <p align="center">
-    <em>Fig. 6 - Se identifica la intensidad de cada variable con un gradiente de color de tonalidades azules, donde los tonos claros indican mayor                   intensidad. </em>
+    <em>Fig. 6 - The intensity of each variable is identified with a color gradient of blue tones, where lighter tones indicate greater intensity. </em>
 </p>
 
-La distribución de los datos originales de cada variable se observa en la Fig.7, junto a cada una de ellas, se encuentra la distribución de los datos transformados por medio de Logaritmo *Log*. A cada distribución, se calculó el coeficiente de asimetría (skewness), se pretende utilizar los datos con coeficiente más cercano a 0, es decir, más simétrica. 
+The distribution of the original data for each variable is shown in Fig. 7, next to each of them is the distribution of the data transformed by means of Logarithm *Log*. For each distribution, the skewness coefficient was calculated, it is intended to use the data with coefficient closer to 0, that is, more symmetrical. 
 
 <p align="center">
   <img width="618" height="678" src="Images/Figure-7.png">
 </p>
 <p align="center">
-    <em>Fig. 7 - Para datos de lluvia originales (en la parte superior) se obtuvo un skewness de 0.33, y para los datos transformados de -0.92. Para los             datos originales del exponente de Hurst (en la parte inferior) se tiene un coeficiente de  -0.07, y de -1.03 para datos transformados. </em>
+    <em>Fig. 7 - For the original rainfall data (at the top) a skewness of 0.33 was obtained, and for the transformed data -0.92. For the original Hurst             exponent data (at the bottom) we have a coefficient of -0.07, and -1.03 for transformed data. </em>
 </p>
 
-Por los valores de los coeficientes, se decide utilizar los valores originales de cada variable.
+Due to the values of the coefficients, it was decided to use the original values of each variable.
 
-Ahora se pasa a hacer uso del mapa variográfico, en la Fig.8, dónde se establece el ángulo de los ejes de anisotropía, donde para ambas variables, se establece un ángulo de 130°. 
+The next step is to make use of the variographic map, in Fig. 8, where the angle of the anisotropy axes is established, where for both variables, an angle of 130° is established.
 
 <p align="center">
   <img width="668" height="306" src="Images/Figure-8.png">
 </p>
 <p align="center">
-    <em>Fig. 8 - Mapa variográfico de ambas variables, el la izquierda valores de lluvia y en la derecha del exponente de Hurst, donde se observa la                 anisotrpía de la región y el ángulo del eje donde la variación es mínima.  </em>
+    <em>Fig. 8 - Variographic map of both variables, rainfall values on the left and Hurst exponent on the right, showing the anisotropy of the region and           the angle of the axis where the variation is minimal.  </em>
 </p>
 
-Una vez que se conoce la dirección, se pasa a realizar el variograma experimental de cada variable, y se ajusta a los modelos teóricos exponencial, Gausiano y esférico. Se utilizan los parámetros de dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _150000 metros_ y un total de _20_ lags para datos de lluvia, para el exponente de Hurst se utilizaron los parámetros con dirección de _130°_ con una tolerancia de _40°_ , un rango maximo de _100000 metros_ y un total de _25_ lags. En la Fig.9 se observan los variogramas. 
+Once the direction is known, the experimental variogram of each variable is made, and it is adjusted to the theoretical exponential, Gaussian and spherical models. The direction parameters of _130°_ with a tolerance of _40°_, a maximum range of _150000 meters_ and a total of _20_ lags are used for rainfall data. For the Hurst exponent, the parameters with a direction of _130°_ with a tolerance of _40°_, a maximum range of _100000 meters_ and a total of _25_ lags were used. The variograms are shown in Fig. 9. 
 
 <p align="center">
   <img width="640" height="822" src="Images/Figure-9.png">
 </p>
 <p align="center">
-    <em>Fig. 9 - Variogramas experimentales de valores de lluvia (izquierda) y exponente de Hurst (derecha) ajustados a modelos esféricos, Gaussianos y               esféricos.  </em>
+    <em>Fig. 9 - Experimental variograms of rainfall values (left) and Hurst exponent (right) fitted to spherical, Gaussian and spherical models.  </em>
 </p>
 
-Con estos variogramas, se decide aplicar el Kriging Ordinario para variogramás teóricos de modelo exponencial y gausiano. En la Fig.10 se observan los mapas interpolados de cada variable.
+With these variograms, it was decided to apply Ordinary Kriging for theoretical exponential and Gaussian model variograms. Fig.10 shows the interpolated maps for each variable.
 
 <p align="center">
   <img width="574" height="715" src="Images/Figure-10.png">
 </p>
 <p align="center">
-    <em>Fig. 10 - En la parte superior se observan los mapas de lluvia para modelos exponencial y esférico, y en la parte inferior para el exponente de               Hurst.  </em>
+    <em>Fig. 10 - The rainfall maps for exponential and spherical models are shown at the top, and for the Hurst exponent at the bottom.  </em>
 </p>
 
 ## Discusión y conclusión
 
-Los hallazgos muestran que las zonas que registran anti-persistencia y gran cantidad de lluvia, de acuerdo con la orografía, se localizan principalmente al pie de las montañas de la Eastern Sierra Madre (SMO). Otra característica de esta zona es la anisotropía de la antipersistencia (direccionalidad espacial a _130°_), indicada como una franja amarilla en la parte central de la región y que coincide con la abundante vegetación de la SMO. Esto implica que en esta franja llueve pocos días al año pero abundantemente, haciendo a estas áreas ideales para la recolección de agua, lo que justifica la localización de las presas; La Boca y Cerro Prieto. En contraste hay zonas con clima predominantemente árido, localizadas en dirección suroeste de la región a una altitud de _1600 masl_. Otra contribución de esta metodología es la identificación geográfica de zonas húmedas, con excelentes condiciones para la agricultura y ganadería.
+The findings show that the zones that register anti-persistence and high rainfall, according to the orography, are located mainly at the foot of the Eastern Sierra Madre (SMO) mountains. Another characteristic of this zone is the anisotropy of the antipersistence (spatial directionality at _130°_), indicated as a yellow strip in the central part of the region and coinciding with the abundant vegetation of the SMO. This implies that in this strip it rains a few days a year but abundantly, making these areas ideal for water collection, which justifies the location of the La Boca and Cerro Prieto dams. In contrast, there are areas with a predominantly arid climate, located in the southwestern direction of the region at an altitude of _1600 masl_. Another contribution of this methodology is the geographical identification of humid zones, with excellent conditions for agriculture and cattle raising.
 
-De otra manera, las zonas con una menor cantidad de lluvia histórica, tiende a presentarse un exponente de Hurst persistente, haciendo las temporadas de lluvias extensas, pero de poca lluvia. Estos resultados pueden evitar la construcción de ciudades sin el debido control de inundaciones en estas zonas, la creación de lagos artificiales nacientes de zonas con lluvia anti-persistente a las otras zonas del área, o la construcción de presas para recaudar y aprovechar de una manera mas eficiente las condiciones de lluvia de estos lugares.
+Otherwise, areas with lower historical rainfall tend to have a persistent Hurst exponent, making the rainy seasons long, but with little rainfall. These results can prevent the construction of cities without proper flood control in these areas, the creation of artificial lakes rising from areas with anti-persistent rainfall to the other parts of the area, or the construction of dams to collect and exploit more efficiently the rainfall conditions of these places.
