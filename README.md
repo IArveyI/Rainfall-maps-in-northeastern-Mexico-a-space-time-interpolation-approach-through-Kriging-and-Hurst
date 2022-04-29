@@ -155,7 +155,7 @@ The *Aditional File 1.csv* is needed in the working directory. Here, the paramet
 
 The files *Aditional File.csv*, *Area.csv*, *Rainfall Parameters.csv*, *Hurst Parameters.csv* are needed. The interpolation maps are made by means of Ordinary Kriging for both variables. The maps present a color gradient to identify the intensity of each variable. In addition, a cross validation is performed, where metrics such as mean error, Mean Squared Prediction Error (MSPE), Normalized Mean Square Error (NMSE), coefficient of determination between observed and predicted data, and predicted and errors are obtained.
 
-## Resultados
+## Results
 
 The location of the study region and each station and the intensity of the variables, mean annual rainfall and Hurst exponent, are shown in Fig. 6. The necessary information can be found in the *Aditional File 1.csv*.
 
@@ -204,7 +204,7 @@ With these variograms, it was decided to apply Ordinary Kriging for theoretical 
     <em>Fig. 10 - The rainfall maps for exponential and spherical models are shown at the top, and for the Hurst exponent at the bottom.  </em>
 </p>
 
-## Discusión y conclusión
+## Discussion and conclusion
 
 The findings show that the zones that register anti-persistence and high rainfall, according to the orography, are located mainly at the foot of the Eastern Sierra Madre (SMO) mountains. Another characteristic of this zone is the anisotropy of the antipersistence (spatial directionality at _130°_), indicated as a yellow strip in the central part of the region and coinciding with the abundant vegetation of the SMO. This implies that in this strip it rains a few days a year but abundantly, making these areas ideal for water collection, which justifies the location of the La Boca and Cerro Prieto dams. In contrast, there are areas with a predominantly arid climate, located in the southwestern direction of the region at an altitude of _1600 masl_. Another contribution of this methodology is the geographical identification of humid zones, with excellent conditions for agriculture and cattle raising.
 
