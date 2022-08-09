@@ -209,7 +209,7 @@ With these variograms, it was decided to apply Ordinary Kriging for theoretical 
 The findings show that the zones that register anti-persistence and high rainfall, according to the orography, are located mainly at the foot of the Eastern Sierra Madre (SMO) mountains. Another characteristic of this zone is the anisotropy of the antipersistence (spatial directionality at _130°_), indicated as a yellow strip in the central part of the region and coinciding with the abundant vegetation of the SMO. This implies that in this strip it rains a few days a year but abundantly, making these areas ideal for water collection, which justifies the location of the La Boca and Cerro Prieto dams. In contrast, there are areas with a predominantly arid climate, located in the southwestern direction of the region at an altitude of _1600 masl_. Another contribution of this methodology is the geographical identification of humid zones, with excellent conditions for agriculture and cattle raising.
 
 <p align="center">
-  <img width="849" height="715" src="Images/Figure-11.png">
+  <img width="950" height="615" src="Images/Figure-11.png">
 </p>
 <p align="center">
     <em>Fig. 11 - INEGI. </em>
