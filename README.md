@@ -160,7 +160,7 @@ The files *Aditional File.csv*, *Area.csv*, *Rainfall Parameters.csv*, *Hurst Pa
 The location of the study region and each station and the intensity of the variables, mean annual rainfall and Hurst exponent, are shown in Fig. 6. The necessary information can be found in the *Aditional File 1.csv*.
 
 <p align="center">
-  <img width="628" height="638" src="Images/Figure-6.png">
+  <img width="628" height="618" src="Images/Figure-6.png">
 </p>
 <p align="center">
     <em>Fig. 6 - The intensity of each variable is identified with a color gradient of blue tones, where lighter tones indicate greater intensity. </em>
