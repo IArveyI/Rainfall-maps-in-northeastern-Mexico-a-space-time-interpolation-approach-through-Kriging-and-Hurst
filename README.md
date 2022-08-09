@@ -169,7 +169,7 @@ The location of the study region and each station and the intensity of the varia
 The distribution of the original data for each variable is shown in Fig. 7, next to each of them is the distribution of the data transformed by means of Logarithm *Log*. For each distribution, the skewness coefficient was calculated, it is intended to use the data with coefficient closer to 0, that is, more symmetrical. 
 
 <p align="center">
-  <img width="618" height="678" src="Images/Figure-7.png">
+  <img width="568" height="628" src="Images/Figure-7.png">
 </p>
 <p align="center">
     <em>Fig. 7 - For the original rainfall data (at the top) a skewness of 0.33 was obtained, and for the transformed data -0.92. For the original Hurst             exponent data (at the bottom) we have a coefficient of -0.07, and -1.03 for transformed data. </em>
@@ -189,7 +189,7 @@ The next step is to make use of the variographic map, in Fig. 8, where the angle
 Once the direction is known, the experimental variogram of each variable is made, and it is adjusted to the theoretical exponential, Gaussian and spherical models. The direction parameters of _130°_ with a tolerance of _40°_, a maximum range of _150000 meters_ and a total of _20_ lags are used for rainfall data. For the Hurst exponent, the parameters with a direction of _130°_ with a tolerance of _40°_, a maximum range of _100000 meters_ and a total of _25_ lags were used. The variograms are shown in Fig. 9. 
 
 <p align="center">
-  <img width="640" height="822" src="Images/Figure-9.png">
+  <img width="540" height="722" src="Images/Figure-9.png">
 </p>
 <p align="center">
     <em>Fig. 9 - Experimental variograms of rainfall values (left) and Hurst exponent (right) fitted to spherical, Gaussian and spherical models.  </em>
@@ -209,7 +209,7 @@ With these variograms, it was decided to apply Ordinary Kriging for theoretical 
 The findings show that the zones that register anti-persistence and high rainfall, according to the orography, are located mainly at the foot of the Eastern Sierra Madre (SMO) mountains. Another characteristic of this zone is the anisotropy of the antipersistence (spatial directionality at _130°_), indicated as a yellow strip in the central part of the region and coinciding with the abundant vegetation of the SMO. This implies that in this strip it rains a few days a year but abundantly, making these areas ideal for water collection, which justifies the location of the La Boca and Cerro Prieto dams. In contrast, there are areas with a predominantly arid climate, located in the southwestern direction of the region at an altitude of _1600 masl_. Another contribution of this methodology is the geographical identification of humid zones, with excellent conditions for agriculture and cattle raising.
 
 <p align="center">
-  <img width="950" height="615" src="Images/Figure-11.png">
+  <img width="850" height="515" src="Images/Figure-11.png">
 </p>
 <p align="center">
     <em>Fig. 11 - INEGI. </em>
