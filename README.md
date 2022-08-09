@@ -160,7 +160,7 @@ The files *Aditional File.csv*, *Area.csv*, *Rainfall Parameters.csv*, *Hurst Pa
 The location of the study region and each station and the intensity of the variables, mean annual rainfall and Hurst exponent, are shown in Fig. 6. The necessary information can be found in the *Aditional File 1.csv*.
 
 <p align="center">
-  <img width="628" height="280" src="Images/Figure-6.png">
+  <img width="628" height="878" src="Images/Figure-6.png">
 </p>
 <p align="center">
     <em>Fig. 6 - The intensity of each variable is identified with a color gradient of blue tones, where lighter tones indicate greater intensity. </em>
@@ -169,7 +169,7 @@ The location of the study region and each station and the intensity of the varia
 The distribution of the original data for each variable is shown in Fig. 7, next to each of them is the distribution of the data transformed by means of Logarithm *Log*. For each distribution, the skewness coefficient was calculated, it is intended to use the data with coefficient closer to 0, that is, more symmetrical. 
 
 <p align="center">
-  <img width="618" height="878" src="Images/Figure-7.png">
+  <img width="618" height="678" src="Images/Figure-7.png">
 </p>
 <p align="center">
     <em>Fig. 7 - For the original rainfall data (at the top) a skewness of 0.33 was obtained, and for the transformed data -0.92. For the original Hurst             exponent data (at the bottom) we have a coefficient of -0.07, and -1.03 for transformed data. </em>
