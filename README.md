@@ -1,14 +1,14 @@
 # Rainfall maps in northeastern Mexico a space time interpolation approach through Kriging and Hurst
 
-This repository is made with the purpose of achieving reproducibility of the methodology applied in the article: "Rainfall maps in northeastern México, a space-time interpolation approach through Kriging and Hurst" (hyperlink to the article).
+This repository is made with the purpose of achieving reproducibility of the methodology applied in the article: "Rainfall maps in northeastern México, a space-time interpolation approach through Kriging and Hurst" in Scientific Reports Journal.
 
 ## Aim
 
-The study region is the San Juan River basin, located in northeastern Mexico, between the states of Coahuila, Nuevo León and Tamaulipas. Currently, there is a water scarce in this area, so a geospatial analysis is performed with Kriging interpolation, showing the behavior of the area based on the average annual amount of rainfall and its historical behavior of persistence or anti-persistence using the Hurst exponent.
+The study region is the San Juan River basin, located in northeastern México, between the states of Coahuila, Nuevo León and Tamaulipas. Currently, there is a water scarce in this area, so a geospatial analysis is performed with Kriging interpolation, showing the behavior of the area based on the average annual amount of rainfall and its historical behavior of persistence or anti-persistence using the Hurst exponent.
 
 ## Introduction
 
-For more detailed information, see Additional File 2 (hyperlink to Additional File 2).
+For more detailed information, see Additional File 2 located in the Journal.
 
 Observed data are measurements of the amount of rainfall at different points in a specific region. The spatial correlation of the scalar field _**Z**_ as a function of distance is known as a *variogram* or *semivariogram*. For clarification, although variogram and semivariogram are commonly used interchangeably, they can actually provide certain differences, so using the term variogram urges a complete calculation rather than the partial one that is represented in the semivariogram.
 
@@ -169,7 +169,7 @@ The location of the study region and each station and the intensity of the varia
 The distribution of the original data for each variable is shown in Fig. 7, next to each of them is the distribution of the data transformed by means of Logarithm *Log*. For each distribution, the skewness coefficient was calculated, it is intended to use the data with coefficient closer to 0, that is, more symmetrical. 
 
 <p align="center">
-  <img width="618" height="678" src="Images/Figure-7.png">
+  <img width="618" height="878" src="Images/Figure-7.png">
 </p>
 <p align="center">
     <em>Fig. 7 - For the original rainfall data (at the top) a skewness of 0.33 was obtained, and for the transformed data -0.92. For the original Hurst             exponent data (at the bottom) we have a coefficient of -0.07, and -1.03 for transformed data. </em>
