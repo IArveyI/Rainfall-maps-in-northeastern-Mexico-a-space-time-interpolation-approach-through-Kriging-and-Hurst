@@ -157,22 +157,22 @@ The files *Aditional File.csv*, *Area.csv*, *Rainfall Parameters.csv*, *Hurst Pa
 
 ## Results
 
-The location of the study region and each station and the intensity of the variables, mean annual rainfall and Hurst exponent, are shown in Fig. 6. The necessary information can be found in the *Aditional File 1.csv*.
+The location of the study region and each station and the intensity of the mean annual rainfall are shown in Fig. 6. The necessary information can be found in the *Aditional File 1.csv*.
 
 <p align="center">
   <img width="528" height="578" src="Images/Figure-6.png">
 </p>
 <p align="center">
-    <em>Fig. 6 - The intensity of each variable is identified with a color gradient of blue tones, where lighter tones indicate greater intensity. </em>
+    <em>Fig. 6 - The intensity of the variable is identified with a color gradient of blue tones, where lighter tones indicate lesser intensity. </em>
 </p>
 
-The distribution of the original data for each variable is shown in Fig. 7, next to each of them is the distribution of the data transformed by means of Logarithm *Log*. For each distribution, the skewness coefficient was calculated, it is intended to use the data with coefficient closer to 0, that is, more symmetrical. 
+The histogram and distribution of the original data for each variable is shown in Fig. 7, you can also see the data adjusted to a normal Q-Q plot. 
 
 <p align="center">
   <img width="568" height="628" src="Images/Figure-7.png">
 </p>
 <p align="center">
-    <em>Fig. 7 - For the original rainfall data (at the top) a skewness of 0.33 was obtained, and for the transformed data -0.92. For the original Hurst             exponent data (at the bottom) we have a coefficient of -0.07, and -1.03 for transformed data. </em>
+    <em>Fig. 7 - The rainfall distribution of data (A) adjusted to a normal Q-Q plot (B) and Hurst exponent distribution (C) adjusted to a normal Q-Q plot (D).   </em>
 </p>
 
 Due to the values of the coefficients, it was decided to use the original values of each variable.
@@ -192,7 +192,7 @@ Once the direction is known, the experimental variogram of each variable is made
   <img width="540" height="722" src="Images/Figure-9.png">
 </p>
 <p align="center">
-    <em>Fig. 9 - Experimental variograms of rainfall values (left) and Hurst exponent (right) fitted to spherical, Gaussian and spherical models.  </em>
+    <em>Fig. 9 - Experimental variograms of rainfall values (A) and Hurst exponent (B) fitted to spherical, Gaussian and spherical models.  </em>
 </p>
 
 With these variograms, it was decided to apply Ordinary Kriging for theoretical exponential and Gaussian model variograms. Fig.10 shows the interpolated maps for each variable.
@@ -201,7 +201,7 @@ With these variograms, it was decided to apply Ordinary Kriging for theoretical 
   <img width="574" height="715" src="Images/Figure-10.png">
 </p>
 <p align="center">
-    <em>Fig. 10 - The rainfall maps for exponential and spherical models are shown at the top, and for the Hurst exponent at the bottom.  </em>
+    <em>Fig. 10 - The rainfall maps for exponential (A) and spherical (B) models are shown at the top, and for the Hurst exponent for exponential (C) and spherical (D) modelsat the bottom.  </em>
 </p>
 
 ## Discussion and conclusion
@@ -214,5 +214,6 @@ The findings show that the zones that register anti-persistence and high rainfal
 <p align="center">
     <em>Fig. 11 - INEGI. </em>
 </p>
+
 
 Otherwise, areas with lower historical rainfall tend to have a persistent Hurst exponent, making the rainy seasons long, but with little rainfall. These results can prevent the construction of cities without proper flood control in these areas, the creation of artificial lakes rising from areas with anti-persistent rainfall to the other parts of the area, or the construction of dams to collect and exploit more efficiently the rainfall conditions of these places.
