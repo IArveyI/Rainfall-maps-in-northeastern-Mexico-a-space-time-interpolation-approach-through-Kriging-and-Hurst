@@ -206,14 +206,13 @@ With these variograms, it was decided to apply Ordinary Kriging for theoretical 
 
 ## Discussion and conclusion
 
-The findings show that the zones that register anti-persistence and high rainfall, according to the orography, are located mainly at the foot of the Eastern Sierra Madre (SMO) mountains. Another characteristic of this zone is the anisotropy of the antipersistence (spatial directionality at _130°_), indicated as a yellow strip in the central part of the region and coinciding with the abundant vegetation of the SMO. This implies that in this strip it rains a few days a year but abundantly, making these areas ideal for water collection, which justifies the location of the La Boca and Cerro Prieto dams. In contrast, there are areas with a predominantly arid climate, located in the southwestern direction of the region at an altitude of _1600 masl_. Another contribution of this methodology is the geographical identification of humid zones, with excellent conditions for agriculture and cattle raising.
+The findings show that the zones that register anti-persistence and high rainfall, according to the orography, are located mainly at the foot of the Eastern Sierra Madre (SMO) mountains. Another characteristic of this zone is the anisotropy of the antipersistence (spatial directionality at _130°_), indicated as a yellow strip in the central part of the region and coinciding with the abundant vegetation of the SMO. This implies that in this strip it rains a few days a year but abundantly, making these areas ideal for water collection, which justifies the location of the La Boca and Cerro Prieto dams. In contrast, there are areas with a predominantly arid climate, located in the southwestern direction of the region at an altitude of _1600 masl_. Another contribution of this methodology is the geographical identification of humid zones, with excellent conditions for agriculture and cattle raising. Otherwise, areas with lower historical rainfall tend to have a persistent Hurst exponent, making the rainy seasons long, but with little rainfall.
 
 <p align="center">
   <img width="850" height="515" src="Images/Figure-11.png">
 </p>
 <p align="center">
-    <em>Fig. 11 - INEGI. </em>
+    <em>Fig. 11 - Climate types (A) and annual rainfall (B) of the study area provided by the National Institute of Statistics, Geography and Informatics. </em>
 </p>
 
-
-Otherwise, areas with lower historical rainfall tend to have a persistent Hurst exponent, making the rainy seasons long, but with little rainfall. These results can prevent the construction of cities without proper flood control in these areas, the creation of artificial lakes rising from areas with anti-persistent rainfall to the other parts of the area, or the construction of dams to collect and exploit more efficiently the rainfall conditions of these places.
+The Fig.11 shows shows a map of the types of climate in the region (A) and the average annual rainfall (B). These maps are extremely important because there is no similar record, only those provided by the inegi, where they do not give any information on the temporal plane, as does the Hurst exponent. These results can prevent the construction of cities without proper flood control in these areas, the creation of artificial lakes rising from areas with anti-persistent rainfall to the other parts of the area, or the construction of dams to collect and exploit more efficiently the rainfall conditions of these places.
